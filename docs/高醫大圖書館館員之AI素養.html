@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>高醫大圖書館數位升級智慧服務六大面向素養</title>
+    <style>
+        body { font-family: '微軟正黑體', 'Microsoft JhengHei', sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; color: #333; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .category-header { background-color: #e0f7fa; color: #00796b; font-size: 1.1em; }
+        .priority-level { font-weight: bold; }
+        .achieved { color: #2e7d32; font-weight: bold; }
+        .recommended { color: #ff6f00; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>高醫大圖書館數位升級智慧服務六大面向素養</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>面向 (六大類)</th>
+                <th>達成階段</th>
+                <th>館員素養</th>
+                <th>對應服務項目 (KMU 醫學情境)</th>
+                <th>所需技能與工具 (Excel/Python)</th>
+                <th>難易性 (1-10)</th>
+                <th>急迫性 (1-10)</th>
+                <th>博士後AI館員[已達成]/[建議]項目</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="category-header"><td colspan="8">I. 資訊檢索與推薦</td></tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>熟練運用AI搜尋與推薦工具，支援資訊查找與主題探索</td>
+                <td>用 AI 輔助檢索，導引讀者探索各類電子期刊與學習資源等醫學核心資源。</td>
+                <td>Excel: 建立 AI 搜尋結果評估表；Python: 熟悉 Requests/Selenium 擷取公開 API 資訊。</td>
+                <td>4</td>
+                <td>9</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>運用AI進行學術資訊檢索與處理</td>
+                <td>用 AI 工具助學者進行系統性文獻回顧、文獻摘要與知識整合。</td>
+                <td>Python: 掌握 NLTK/SpaCy 進行文本摘要與主題詞提取；熟悉 Pandas 處理文獻清單。</td>
+                <td>6</td>
+                <td>10</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>提供AI智慧參考諮詢</td>
+                <td>用 LINE/網頁機器人 輔助回答電子資源存取等問題，並驗證回答。</td>
+                <td>Python: 掌握 Rasa/FastAPI 建立簡單聊天機器人原型；Excel: 維護 FAQ Q&A 知識庫。</td>
+                <td>5</td>
+                <td>9</td>
+                <td class="achieved">已經發展到無人櫃台3.0用到代理人的架構系統;line答話機器人都用到知識圖譜架構來建構了.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>用AI進行個人化推薦與知識組織</td>
+                <td>結合 toread數據，提供各學系個人化資源書單推薦。</td>
+                <td>Python: 運用 Scikit-learn 進行基礎協同過濾；Excel: 製作讀者借閱行為分析表。</td>
+                <td>7</td>
+                <td>8</td>
+                <td class="achieved">已經利用讀者借閱歷史計算出讀者適合的到館新書推薦,精準行銷.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">逐步達成</td>
+                <td>運用AI進行文本探勘與分類</td>
+                <td>讀者留言分類、教師研究分析、館藏主題探索。</td>
+                <td>Python: 掌握 NLTK/gensim 進行主題建模；Excel: 運用篩選、排序處理分類結果。</td>
+                <td>8</td>
+                <td>7</td>
+                <td class="recommended">留言或推薦書籍都可以透過AI語意分析研究</td>
+            </tr>
+
+            <tr class="category-header"><td colspan="8">II. 資料分析與決策支援</td></tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>分析館藏成本效益與經費運用</td>
+                <td>分析資料庫使用統計，預測續訂趨勢，支援AI 精準採購決策。</td>
+                <td>Excel: 熟練運用樞紐分析、目標搜尋；Python: 運用 Statsmodels/Prophet 進行簡單趨勢預測。</td>
+                <td>6</td>
+                <td>9</td>
+                <td class="achieved">已撰寫外掛程式包含下列功能: 1.採購預測與性價比持續進行中,精準採購已實施一年多 2.複查書單在電子資源中已存有 3.原本須付費的電子期刊是否變成OpenAcess</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>掌握AI資料分析與視覺化技術</td>
+                <td>製作 讀者行為、資源使用、空間利用 儀表板，支援館務決策與報告。</td>
+                <td>Excel: 熟練運用內建圖表工具、條件式格式；Python: 掌握 Matplotlib/Seaborn 進行數據視覺化。</td>
+                <td>5</td>
+                <td>8</td>
+                <td class="recommended">歡迎各組提供可公開的數據</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">逐步達成</td>
+                <td>分析讀者行為，優化服務與體驗</td>
+                <td>分析 智慧空間 行為數據，優化座位/討論區設計及服務流程。</td>
+                <td>Python: 掌握 Pandas 處理 log 檔；Excel: 繪製交叉分析圖表。</td>
+                <td>7</td>
+                <td>9</td>
+                <td class="recommended">可以預測將來新宿舍新自修座位的使用模式.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">逐步達成</td>
+                <td>處理與分析大規模資料</td>
+                <td>清理館藏紀錄、解析日誌、自動化報表。</td>
+                <td>Python: 運用 Pandas 進行大規模數據的清理、轉換 (ETL) 和自動化報表生成。</td>
+                <td>7</td>
+                <td>6</td>
+                <td class="achieved">已撰寫每月自動下載圖書館資料庫資料的外掛程式</td>
+            </tr>
+
+            <tr class="category-header"><td colspan="8">III. 系統整合與技術管理</td></tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>評估與選擇AI系統與工具</td>
+                <td>比較 無人借還系統、AI 空間管理軟體，選定與現有系統整合的最佳方案。</td>
+                <td>Excel: 熟練製作具備權重分析的 RFP/SWOT 評估表。</td>
+                <td>6</td>
+                <td>9</td>
+                <td class="recommended">智慧化管理新研究</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">逐步達成</td>
+                <td>理解智慧技術與AI整合潛力</td>
+                <td>規劃 RFID 借還與 IoT 感測器 數據，輔助 24 小時智慧空間及自動化盤點。</td>
+                <td>Python: 了解 MQTT 協議基礎，處理簡單 IoT 數據流；Excel: 記錄並分析感測器數據的異常。</td>
+                <td>7</td>
+                <td>8</td>
+                <td class="recommended">未來宿舍的研究小間之冷氣跟電燈關閉,可用樹莓派偵測在刷卡退出後由wac開啟啟動光亮度與溫度下降速率就可以知道有沒有關?再派人或請總務處或外包商安裝wifi斷電關閉,自有智慧聯網技術!</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">逐步達成</td>
+                <td>監督AI系統可解釋性與公平性</td>
+                <td>觀察 AI 資源推薦模組對非主流學科的資源分配偏誤，並參與修正。</td>
+                <td>Python: 了解 Fairlearn 套件進行公平性評估的概念；Excel: 建立數據集偏誤檢測表。</td>
+                <td>8</td>
+                <td>10</td>
+                <td class="achieved">每年檢討前年的精準採購有沒有提升借閱率跟金額性價比,有就繼續原先演算法,沒有就討論改變演算法!數位治理,人腦檢視管理.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">逐步達成</td>
+                <td>規劃與管理AI專案</td>
+                <td>擬定時程、協調人員、監控進度。</td>
+                <td>Excel: 製作甘特圖、資源分配表、KPI 追蹤儀表板。</td>
+                <td>7</td>
+                <td>7</td>
+                <td></td>
+            </tr>
+
+            <tr class="category-header"><td colspan="8">IV. 館藏管理與數位保存</td></tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>規劃AI在研究資料管理應用</td>
+                <td>協助醫學研究者 用 AI 工具清理、分類、標註臨床試驗或公衛調查的研究資料 (RDM)。</td>
+                <td>Python: 運用 OpenRefine 腳本或 Pandas 進行資料清理、格式轉換及標準化。</td>
+                <td>6</td>
+                <td>9</td>
+                <td class="recommended">訂閱的電子期刊內含的AI功能應該有吧?</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>應用AI輔助館藏編目與詮釋</td>
+                <td>利用 AI 輔助生成關館藏的主題詞、摘要、分類號，提升編目效率。用AI分類新聞標籤.</td>
+                <td>Python: 運用 NLTK/gensim 進行自動主題建模，將結果輔助 MARC 紀錄編寫。</td>
+                <td>5</td>
+                <td>7</td>
+                <td class="achieved">已撰寫外掛軟體幫助校史館下載本校相關新聞並予以自動化分類標籤.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">逐步達成</td>
+                <td>強化資料管理安全與隱私</td>
+                <td>分析存取異常、建議匿名化與控管。</td>
+                <td>Python: 運用 Pandas 進行 log 檔異常檢測；了解 Faker 進行數據匿名化的概念。</td>
+                <td>8</td>
+                <td>10</td>
+                <td></td>
+            </tr>
+
+            <tr class="category-header"><td colspan="8">V. 讀者服務與研究支援</td></tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>建立與維護AI聊天機器人知識庫</td>
+                <td>維護醫學核心資源 FAQ、學科諮詢知識庫，確保 AI 服務的內容準確性。</td>
+                <td>Excel: 熟練管理大型 Q&A 資料表；Python: 撰寫腳本驗證知識庫的數據完整性。</td>
+                <td>5</td>
+                <td>9</td>
+                <td class="achieved">讀服組館員已熟悉蒐集對話劇本的方法</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>協助系統性文獻回顧與整合</td>
+                <td>引導使用者運用 AI 工具快速掌握醫學文獻，優化研究流程。</td>
+                <td>Python: 示範運用 Requests 取得文獻元數據，並用 Pandas 進行簡單的文獻計量分析。</td>
+                <td>5</td>
+                <td>8</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">逐步達成</td>
+                <td>協作推動AI研究與應用</td>
+                <td>與校內 資訊系統組 及 博士後開發團隊 協作，參與AI 知識機器人的開發與優化。</td>
+                <td>Python: 掌握 RESTful API 基礎概念，進行數據交換測試。</td>
+                <td>7</td>
+                <td>7</td>
+                <td class="recommended">與靜雯開發中</td>
+            </tr>
+
+            <tr class="category-header"><td colspan="8">VI. 教育推廣、倫理與專業發展</td></tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>指導AI內容評估方法</td>
+                <td>教導醫學研究者辨識 AI 生成的虛構引文 (Hallucination) 和摘要錯誤。</td>
+                <td>Excel: 建立事實查核清單及錯誤案例庫；Python: 運用簡單的腳本比對 AI 摘要與原文差異。</td>
+                <td>4</td>
+                <td>10</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>指導AI倫理議題</td>
+                <td>分析 AI 推薦與分類中潛在的資源/學科偏誤案例，確保公平性。</td>
+                <td>Python: 了解 Fairlearn 套件進行公平性評估的概念。</td>
+                <td>5</td>
+                <td>10</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>設計AI資訊素養課程</td>
+                <td>針對醫學、護理等專業，設計 Python/Excel 輔助文獻檢索 的資訊素養課程。</td>
+                <td>Excel/Python: 熟練將上述 Python/Excel 技能轉化為教學案例。</td>
+                <td>6</td>
+                <td>9</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="priority-level">優先達成</td>
+                <td>持續學習AI知識與技能</td>
+                <td>定期參加 醫學資訊學會、圖資 AI 研討，追蹤 AI 在醫學領域的應用。</td>
+                <td>Excel/Python: 無需特定工具，維持專業自學。</td>
+                <td>1</td>
+                <td>9</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="8" style="text-align: right; background-color: #ffffff; border: none;">資料來源: <a href="https://reurl.cc/7bjyA5">https://reurl.cc/7bjyA5</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
